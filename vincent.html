@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vincent Cheruiyot - CV</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e9edf2;
+    color: #263445;
+    line-height: 1.6;
+    overflow-x: auto;
+}
+
+/* NAVIGATION BAR */
+nav {
+    background: #102c4a;
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #5dade2;
+    text-decoration: underline;
+}
+
+/* HORIZONTAL PAGE CONTAINER */
+.pages-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    width: max-content;
+    padding: 25px;
+}
+
+/* PAGE DESIGN */
+.page {
+    flex: 0 0 210mm;
+    width: 210mm;
+    min-height: 297mm;
+    background: white;
+    margin: 0;
+    padding: 22mm 20mm;
+    position: relative;
+    box-shadow: 0 3px 15px rgba(0,0,0,.12);
+    scroll-margin-top: 90px;
+}
+
+/* HEADER */
+.header {
+    background: #102c4a;
+    color: white;
+    padding: 30px;
+    margin: -22mm -20mm 30px;
+}
+
+.header h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.header p {
+    color: #c5d9ee;
+}
+
+/* SECTION TITLES */
+.section-title {
+    color: #12395d;
+    font-size: 19px;
+    border-bottom: 2px solid #2e86c1;
+    padding-bottom: 7px;
+    margin: 25px 0 15px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+ul {
+    margin: 10px 0 15px 25px;
+}
+
+li {
+    margin-bottom: 9px;
+}
+
+/* INFORMATION BOX */
+.info {
+    background: #f0f5fa;
+    padding: 15px;
+    border-left: 4px solid #2471a3;
+    margin: 15px 0;
+}
+
+.highlight {
+    color: #17608d;
+    font-weight: bold;
+}
+
+/* SKILLS */
+.skill {
+    display: inline-block;
+    background: #e8f2fa;
+    color: #174b70;
+    padding: 9px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* CONTACT DETAILS */
+.contact-row {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.contact-label {
+    width: 125px;
+    flex-shrink: 0;
+    font-weight: bold;
+    color: #12395d;
+}
+
+/* PAGE NAVIGATION */
+.page-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ccd5df;
+}
+
+.page-navigation a {
+    background: #12395d;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.page-navigation a:hover {
+    background: #2471a3;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    color: #73808d;
+    font-size: 12px;
+    margin-top: 30px;
+    border-top: 1px solid #ccd5df;
+    padding-top: 10px;
+}
+
+/* SIGNATURE */
+.signature {
+    margin-top: 45px;
+    border-top: 1px solid #555;
+    width: 230px;
+    padding-top: 8px;
+}
+
+/* PRINT BUTTON */
+.print-button {
+    display: block;
+    margin: 25px auto;
+    background: #12395d;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.print-button:hover {
+    background: #2471a3;
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 800px) {
+    .pages-container {
+        justify-content: flex-start;
+    }
+}
+
+/* PRINT SETTINGS */
+@media print {
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    html, body {
+        background: white;
+        overflow: visible;
+    }
+
+    nav,
+    .page-navigation,
+    .no-print {
+        display: none !important;
+    }
+
+    .pages-container {
+        display: block;
+        width: 210mm;
+        padding: 0;
+        margin: 0;
+    }
+
+    .page {
+        width: 210mm;
+        height: 297mm;
+        min-height: 297mm;
+        margin: 0;
+        box-shadow: none;
+        page-break-after: always;
+        break-after: page;
+    }
+
+    .page:last-child {
+        page-break-after: auto;
+        break-after: auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- MAIN NAVIGATION -->
+<nav>
+    <a href="#home">HOME</a>
+    <a href="#experience">EXPERIENCE</a>
+    <a href="#contacts">CONTACTS</a>
+    <a href="#hobbies">HOBBIES</a>
+</nav>
+
+<!-- HORIZONTAL CV PAGES START -->
+<div class="pages-container">
+
+<!-- PAGE 1 -->
+<section class="page" id="home">
+
+    <div class="header">
+        <h1>VINCENT CHERUIYOT</h1>
+        <p>Information Science and Technology Student</p>
+        <p>IT Enthusiast | Aspiring Technology Professional</p>
+    </div>
+
+    <h2 class="section-title">Professional Profile</h2>
+
+    <p>
+        I am a motivated undergraduate student pursuing a
+        Bachelor's Degree in Information Science and Technology
+        at Kisii University. I have a strong interest in
+        cybersecurity, computer networking, programming
+        and web development.
+    </p>
+
+    <p>
+        I have gained workplace exposure through an internship
+        at the Kenya Revenue Authority (KRA), within the
+        Information Technology Department. I am passionate
+        about digital innovation and continuous learning.
+    </p>
+
+    <h2 class="section-title">Career Objective</h2>
+
+    <p>
+        To develop my professional career in information
+        technology by applying academic knowledge, technical
+        abilities and practical experience while contributing
+        to innovative technological solutions.
+    </p>
+
+    <h2 class="section-title">Educational Background</h2>
+
+    <div class="info">
+        <h3>Kisii University</h3>
+        <p class="highlight">
+            Bachelor's Degree in Information Science and Technology
+        </p>
+        <p>2024 – Present</p>
+        <p>Currently pursuing</p>
+    </div>
+
+    <div class="info">
+        <h3>Cheptenye High School</h3>
+        <p class="highlight">
+            Kenya Certificate of Secondary Education (KCSE)
+        </p>
+        <p>Year completed: To be confirmed</p>
+    </div>
+
+    <div class="info">
+        <h3>Kotetnie Primary School</h3>
+        <p class="highlight">
+            Kenya Certificate of Primary Education (KCPE)
+        </p>
+        <p>2010 – 2020</p>
+    </div>
+
+    <div class="page-navigation">
+        <span></span>
+        <a href="#experience">Next: Experience →</a>
+    </div>
+
+    <div class="footer">Page 1 of 4 | Vincent Cheruiyot</div>
+
+</section>
+
+
+<!-- PAGE 2 -->
+<section class="page" id="experience">
+
+    <div class="header">
+        <h1>EXPERIENCE</h1>
+        <p>Professional and Technical Background</p>
+    </div>
+
+    <h2 class="section-title">Work Experience</h2>
+
+    <div class="info">
+        <h3>Kenya Revenue Authority (KRA)</h3>
+        <p class="highlight">
+            IT Intern – Information Technology Department
+        </p>
+        <p>April 2025 – June 2025</p>
+    </div>
+
+    <p>
+        Undertook an internship placement at the Kenya Revenue
+        Authority within the Information Technology Department.
+        This experience provided workplace exposure and an
+        opportunity to develop practical knowledge in IT.
+    </p>
+
+    <p>
+        Specific internship duties and responsibilities can
+        be added to reflect the actual tasks performed.
+    </p>
+
+    <h2 class="section-title">Technical Skills</h2>
+
+    <span class="skill">Cybersecurity</span>
+    <span class="skill">Networking</span>
+    <span class="skill">Programming</span>
+    <span class="skill">Web Development</span>
+
+    <h2 class="section-title">Professional Competencies</h2>
+
+    <ul>
+        <li>Interest in emerging technologies.</li>
+        <li>Ability to learn new technical concepts.</li>
+        <li>Interest in information security.</li>
+        <li>Willingness to work collaboratively.</li>
+        <li>Commitment to professional development.</li>
+    </ul>
+
+    <div class="page-navigation">
+        <a href="#home">← Previous: Home</a>
+        <a href="#contacts">Next: Contacts →</a>
+    </div>
+
+    <div class="footer">Page 2 of 4 | Vincent Cheruiyot</div>
+
+</section>
+
+
+<!-- PAGE 3 -->
+<section class="page" id="contacts">
+
+    <div class="header">
+        <h1>PERSONAL DETAILS</h1>
+        <p>Personal Information and Communication</p>
+    </div>
+
+    <h2 class="section-title">Personal Information</h2>
+
+    <div class="contact-row">
+        <span class="contact-label">Full Name:</span>
+        <span>Vincent Cheruiyot</span>
+    </div>
+
+    <div class="contact-row">
+        <span class="contact-label">Institution:</span>
+        <span>Kisii University</span>
+    </div>
+
+    <div class="contact-row">
+        <span class="contact-label">Profession:</span>
+        <span>Information Technology Student</span>
+    </div>
+
+    <h2 class="section-title">Contact Information</h2>
+
+    <div class="info">
+
+        <div class="contact-row">
+            <span class="contact-label">Phone:</span>
+            <span>0729053188</span>
+        </div>
+
+        <div class="contact-row">
+            <span class="contact-label">Email:</span>
+            <span>vincentcheruiyot553@gmail.com</span>
+        </div>
+
+        <div class="contact-row">
+            <span class="contact-label">Location:</span>
+            <span>[Add your current town and county]</span>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">Professional References</h2>
+
+    <p>Professional references are available upon request.</p>
+
+    <div class="page-navigation">
+        <a href="#experience">← Previous: Experience</a>
+        <a href="#hobbies">Next: Hobbies →</a>
+    </div>
+
+    <div class="footer">Page 3 of 4 | Vincent Cheruiyot</div>
+
+</section>
+
+
+<!-- PAGE 4 -->
+<section class="page" id="hobbies">
+
+    <div class="header">
+        <h1>HOBBIES & INTERESTS</h1>
+        <p>Personal Interests and Development</p>
+    </div>
+
+    <h2 class="section-title">Hobbies</h2>
+
+    <ul>
+        <li>
+            <strong>Reading Novels:</strong>
+            Developing creativity, imagination and knowledge.
+        </li>
+
+        <li>
+            <strong>Digital Innovation:</strong>
+            Exploring new technologies and digital solutions.
+        </li>
+
+        <li>
+            <strong>Teamwork Activities:</strong>
+            Participating in collaborative activities.
+        </li>
+    </ul>
+
+    <h2 class="section-title">Personal Interests</h2>
+
+    <ul>
+        <li>Exploring emerging information technologies.</li>
+        <li>Learning about cybersecurity.</li>
+        <li>Developing programming skills.</li>
+        <li>Web development and digital innovation.</li>
+    </ul>
+
+    <h2 class="section-title">Personal Strengths</h2>
+
+    <ul>
+        <li>Willingness to learn and adapt.</li>
+        <li>Problem-solving interest.</li>
+        <li>Collaborative working attitude.</li>
+        <li>Commitment to personal development.</li>
+    </ul>
+
+    <h2 class="section-title">Declaration</h2>
+
+    <p>
+        I hereby declare that the information provided in this
+        curriculum vitae is true and accurate to the best of
+        my knowledge and belief.
+    </p>
+
+    <div style="margin-top:40px;">
+        <p><strong>Name:</strong> Vincent Cheruiyot</p>
+
+        <div class="signature">Signature</div>
+
+        <p style="margin-top:25px;">Date: __________________</p>
+    </div>
+
+    <div class="page-navigation">
+        <a href="#contacts">← Previous: Contacts</a>
+        <a href="#home">Back to Home ↑</a>
+    </div>
+
+    <div class="footer">Page 4 of 4 | Vincent Cheruiyot</div>
+
+</section>
+
+</div>
+<!-- HORIZONTAL CV PAGES END -->
+
+
+<!-- PRINT BUTTON -->
+<div class="no-print">
+    <button class="print-button" onclick="window.print()">
+        Print / Save CV as PDF
+    </button>
+</div>
+
+</body>
+</html>
